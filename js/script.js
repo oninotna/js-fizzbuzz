@@ -22,13 +22,14 @@ const multipleOfThreeAndFive = "FizzBuzz";
 
 // * SVOLGIMENTO 2
 // for (i=1; i <= 100; i++) {
-//     i % 3 === 0 && i % 5 === 0 ? console.log(multipleOfThreeAndFive)
-//     : i % 3 === 0 ? console.log(multipleOfThree)
-//     : i % 5 === 0 ? console.log(multipleOfFive) 
-//     : console.log(i);
+//  const replaceNumber = i % 3 === 0 && i % 5 === 0 ? multipleOfThreeAndFive
+//     : i % 3 === 0 ? multipleOfThree
+//     : i % 5 === 0 ? multipleOfFive: i;
+//     console.log(replaceNumber); 
 // }
 
+
 // * SVOLGIMENTO 3
-for (i=1; i <= 100; i++) {
+for (i=1; i <= 100; i++)
+    console.log((i % 3 ? '' : multipleOfThree) + (i % 5 ? '' : multipleOfFive) || i);
     
-}
